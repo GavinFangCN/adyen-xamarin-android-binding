@@ -48,7 +48,7 @@
     <None Include="BaseV3.nuspec" />
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\base-v3-3.2.0.aar" />
+    <None Include="Jars\base-v3-3.6.4.aar" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />

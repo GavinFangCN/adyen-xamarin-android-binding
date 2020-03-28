@@ -2,7 +2,7 @@
 // ARGUMENTS
 //////////////////////////////////////////////////////////////////////
 
-var target = Argument("target", "Default");
+var target = Argument("target", "BuildAllPackages");
 var configuration = Argument("configuration", "Release");
 
 //////////////////////////////////////////////////////////////////////
@@ -78,13 +78,13 @@ void DownloadAdyenPackages(bool force = false)
 {
     var packages = new Dictionary<string, string> {
         { "https://jcenter.bintray.com/com/adyen/cse/adyen-cse/1.0.5/adyen-cse-1.0.5.aar", $"{projectBaseDir}/AdyenCse/Jars/adyen-cse-1.0.5.aar" },
-		{ "https://jcenter.bintray.com/com/adyen/checkout/base-ui/3.2.0/base-ui-3.2.0.aar", $"{projectBaseDir}/BaseUI/Jars/base-ui-3.2.0.aar"},
-		{ "https://jcenter.bintray.com/com/adyen/checkout/base-v3/3.2.0/base-v3-3.2.0.aar", $"{projectBaseDir}/BaseV3/Jars/base-v3-3.2.0.aar"},
-		{ "https://jcenter.bintray.com/com/adyen/checkout/card-base/3.2.0/card-base-3.2.0.aar", $"{projectBaseDir}/CardBase/Jars/card-base-3.2.0.aar"},
-		/*{ "https://jcenter.bintray.com/com/adyen/checkout/card-ui/3.2.0/card-ui-3.2.0.aar", $"{projectBaseDir}/CardUI/Jars/card-ui-3.2.0.aar"},  This package is bug-fixed locally and should not be downloaded */
-		{ "https://jcenter.bintray.com/com/adyen/checkout/core-v3/3.2.0/core-v3-3.2.0.aar", $"{projectBaseDir}/CoreV3/Jars/core-v3-3.2.0.aar"},
-		{ "https://jcenter.bintray.com/com/adyen/checkout/cse/3.2.0/cse-3.2.0.aar", $"{projectBaseDir}/Cse/Jars/cse-3.2.0.aar"},
-		{ "https://jcenter.bintray.com/com/adyen/checkout/redirect/3.2.0/redirect-3.2.0.aar", $"{projectBaseDir}/Redirect/Jars/redirect-3.2.0.aar"}
+		{ "https://jcenter.bintray.com/com/adyen/checkout/base-ui/3.6.4/base-ui-3.6.4.aar", $"{projectBaseDir}/BaseUI/Jars/base-ui-3.6.4.aar"},
+		{ "https://jcenter.bintray.com/com/adyen/checkout/base-v3/3.6.4/base-v3-3.6.4.aar", $"{projectBaseDir}/BaseV3/Jars/base-v3-3.6.4.aar"},
+		{ "https://jcenter.bintray.com/com/adyen/checkout/card-base/3.6.4/card-base-3.6.4.aar", $"{projectBaseDir}/CardBase/Jars/card-base-3.6.4.aar"},
+		{ "https://jcenter.bintray.com/com/adyen/checkout/card-ui/3.6.4/card-ui-3.6.4.aar", $"{projectBaseDir}/CardUI/Jars/card-ui-3.6.4.aar"},  /* This package is bug-fixed locally and should not be downloaded */
+		{ "https://jcenter.bintray.com/com/adyen/checkout/core-v3/3.6.4/core-v3-3.6.4.aar", $"{projectBaseDir}/CoreV3/Jars/core-v3-3.6.4.aar"},
+		{ "https://jcenter.bintray.com/com/adyen/checkout/cse/3.6.4/cse-3.6.4.aar", $"{projectBaseDir}/Cse/Jars/cse-3.6.4.aar"},
+		{ "https://jcenter.bintray.com/com/adyen/checkout/redirect/3.6.4/redirect-3.6.4.aar", $"{projectBaseDir}/Redirect/Jars/redirect-3.6.4.aar"}
     };
 
     foreach(var package in packages) {
