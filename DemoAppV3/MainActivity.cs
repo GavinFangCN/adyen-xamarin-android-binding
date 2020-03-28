@@ -21,9 +21,9 @@ namespace DemoAppV3
 	{
 		public const string ServerUrl = "https://checkout-test.adyen.com/checkout/v49/";
 		//Insert your test api key, public key and merchant account here
-		public const string ApiKey = "";
-		public const string MerchantAccount = "";
-		public const string PublicKey = "";
+		public const string ApiKey = "AQEkhmfuXNWTK0Qc+iScm3c5gPaUXZsvUirrDFstiyH7TS010QqiEMFdWw2+5HzctViMSCJMYAc=-XDnDcnyDYt1rj0MsgTN3wuccn6fI5rOR/66rCD4+dzI=-Qn6xQddxCUvfAZV2";
+		public const string MerchantAccount = "LisaGroupECOM";
+		public const string PublicKey = "10001|B67C096EEEA1954085DE98BA779EB9CBBFF0522E9609ED907991FDAE95807B8A8C20E7CF15B6B8302FA3C08C436530CEB0E432EFF9B73A168A5AA0200DDFF8E207AC8D28F88934735922FE6C8D7039674760CA01A688D28E47B59F133BD796681AB7A33719D61FE0AB55C098CD554C281EC7C3BB8462AB233257FD102DB40E82899C8FFC29BAF97348B3821BAE9C6ECF71ABB5334AFC8357361719050FB40C12AD1BB4D3D88431E49D604715C463C3BC619A6971804E2769A4104F2B62B53BCEEA8F07D42F8DBDD5BB6E583EBFD5BA429A6DFC1E79870C491E1A7896C39F16F8166CFC685C4E42CFB191CFB89C3D4BB4EF9590C4D387090CDAE9145AAEF5E887";
 
 		//These can be changed to your liking
 		public const string CountryCode = "sv";
@@ -120,7 +120,7 @@ namespace DemoAppV3
 
 						var cardComponent = CardComponent.Provider.Get(this, cardPaymentMethod, cardConfiguration) as CardComponent;
 
-						var cardView = new CardView(this) { Id = View.GenerateViewId() };
+						var cardView = new CardView(this);// { Id = View.GenerateViewId() };
 						var cardLayout = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
 						cardLayout.AddRule(LayoutRules.AlignParentTop);
 						cardView.Attach(cardComponent, this);

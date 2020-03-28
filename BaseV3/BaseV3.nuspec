@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Approach.Adyen.BaseV3.Droid</id>
-        <version>3.2.0</version>
+        <version>3.2.1</version>
         <description>Xamarin Binding Library - Adyen Checkout Base v3 Android SDK</description>
         <authors>Approach</authors>
         <owners>Approach</owners>
@@ -18,7 +18,7 @@
         <dependencies>
             <dependency id="Xamarin.Android.Support.Fragment" version="28.0.0.1" />
             <dependency id="Xamarin.Android.Arch.Lifecycle.Extensions" version="1.1.1.1" />
-            <dependency id="Approach.Adyen.CoreV3.Droid" version="3.2.0" />
+            <dependency id="Approach.Adyen.CoreV3.Droid" version="3.2.1" />
         </dependencies>
     </metadata>
 </package>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Approach.Adyen.CardUI.Droid</id>
-        <version>3.2.0</version>
+        <version>3.2.1</version>
         <description>Xamarin Binding Library - Adyen CardUI Android SDK</description>
         <authors>Approach</authors>
         <owners>Approach</owners>
@@ -16,9 +16,9 @@
         <copyright>Copyright (c) 2019 Approach</copyright>
         <tags>Xamarin.Android, Adyen, sdk</tags>
         <dependencies>
-            <dependency id="Xamarin.Android.Support.Design" version="28.0.0.1" />
-            <dependency id="Approach.Adyen.BaseUI.Droid" version="3.2.0" />
-            <dependency id="Approach.Adyen.CardBase.Droid" version="3.2.0" />
+            <dependency id="Xamarin.Android.Support.Design" version="28.0.0.3" />
+            <dependency id="Approach.Adyen.BaseUI.Droid" version="3.2.1" />
+            <dependency id="Approach.Adyen.CardBase.Droid" version="3.2.1" />
         </dependencies>
     </metadata>
 </package>
